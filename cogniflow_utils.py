@@ -2,7 +2,7 @@ import requests
 import json
 from time import sleep
 
-def cogniflow_request(model_url, api_key, image_base64, image_format, attempt=3):
+def cogniflow_request(model_url, api_key, input_text, attempt=3):
 
     headers = {
         'accept': 'application/json',
@@ -11,8 +11,7 @@ def cogniflow_request(model_url, api_key, image_base64, image_format, attempt=3)
     }
 
     data = {
-        "format": image_format,
-        "base64_image": image_base64
+        "text" : input_text
     }
 
     data_json = json.dumps(data)
