@@ -34,6 +34,8 @@ if not "text/classification/predict/" in model:
 
 inputtext = st.text_input("input text here")
 
+st.session_state['enableBtn'] = not (inputtext is not None and model != "" and api_key != "")
+
 click = st.button("✨ Get prediction from AI", disabled=st.session_state.enableBtn)
 
 if click:
