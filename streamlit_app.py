@@ -32,7 +32,7 @@ if not "text/classification/predict/" in model:
     st.error("Error validating model url. Please make sure you are using a text classification model")
     st.stop()
 
-inputtext = st.input("input text here")
+inputtext = st.text_input("input text here")
 
 click = st.button("✨ Get prediction from AI", disabled=st.session_state.enableBtn)
 
