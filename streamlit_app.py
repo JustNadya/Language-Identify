@@ -22,7 +22,7 @@ def _max_width_():
 
 _max_width_()
 
-st.title('Text Classification')
+st.title('Identify Language: Text-Based')
 st.markdown("Powered by [Cogniflow](https://www.cogniflow.ai)")
 
 model = st.secrets["model_url"]
