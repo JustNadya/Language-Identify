@@ -3,7 +3,7 @@ import base64
 from cogniflow_utils import cogniflow_request
 
 st.set_page_config(
-    page_title="Cogniflow Text Classification",
+    page_title="Identify Language: Text-Based",
     page_icon="https://uploads-ssl.webflow.com/60510407e7726b268293da1c/60ca08f7a2abc9c7c79c4dac_logo_ico256x256.png",
 )
 
